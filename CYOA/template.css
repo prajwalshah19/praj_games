@@ -9,5 +9,19 @@ h1 {
 
     font-size: large;
     color: darkgreen;
+    font-weight: bold;
+
+}
+
+p {
+
+
+    color: white;
+}
+
+.container {
+    max-width: 800px;
+    margin: 100px auto;
+
 
 }
