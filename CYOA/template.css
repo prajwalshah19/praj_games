@@ -1,0 +1,13 @@
+@charset "utf-8";
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: black;
+}
+
+h1 {
+
+    font-size: large;
+    color: darkgreen;
+
+}
