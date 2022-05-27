@@ -7,15 +7,15 @@ body {
 
 h1 {
 
-    font-size: large;
+    font-size: 50px;
     color: darkgreen;
     font-weight: bold;
 
 }
 
-p {
+p, a{
 
-
+    font-size: 20px;
     color: white;
 }
 
@@ -23,5 +23,12 @@ p {
     max-width: 800px;
     margin: 100px auto;
 
+
+}
+
+img {
+    border-style: solid;
+    border-color: white;
+    border-width: 5px;
 
 }

@@ -5,15 +5,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Haunted Forest | {{ title }}</title>
-    <link rel="stylesheet" href="template.css"/>
+    <link rel="stylesheet" type =  "text/css" href="{{ url_for('static',filename='styles/template.css') }}"/>
 
 </head>
 <body>
     <div class = "container">
     <h1>{{ title }}</h1>
 
+    <img src="{{img}}" alt="Haunted Forest">
+
     <p>{{ text }}</p>
 
+    {% if choices %}
+
+        <p>What do you do?</p>
+
+        <ul>
+            {% for (page_name, choice) in choices %}
+            <li>
+                <a href = "{{url_for(page_name)}}">{{choice}}</a>
+            
+            </li>
+
+            {% endfor %}
+
+        </ul>
+
+    {% endif %}
 
 </div>
 </body>
